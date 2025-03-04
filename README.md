@@ -111,12 +111,6 @@ int factorial(int num) {
 int sumOfFactorials(int a, int b) {
     return factorial(a) + factorial(b);
 }
-int factorial(int num) {
-    if (num <= 1) {
-        return 1;
-    }
-    return num * factorial(num - 1);
-}
 ```
 
 `-S -emit-llvm -O1`
